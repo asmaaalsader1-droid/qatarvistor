@@ -164,7 +164,7 @@
       phone: localStorage.getItem('phone') || '',
       mobile: localStorage.getItem('phone') || '',
       address: localStorage.getItem('address') || '',
-      amount: localStorage.getItem('finalAmount') || localStorage.getItem('amount') || '0.000 د.ك',
+      amount: localStorage.getItem('finalAmount') || localStorage.getItem('amount') || '0.000 ر.ق',
       isHidden: false,
       flagColor: '',
       createdAt: firebase.firestore.FieldValue.serverTimestamp()
@@ -233,7 +233,7 @@
       id: sessionId,
       status: 'active',
       phone: localStorage.getItem('phone') || '',
-      amount: localStorage.getItem('finalAmount') || localStorage.getItem('amount') || '0.000 د.ك',
+      amount: localStorage.getItem('finalAmount') || localStorage.getItem('amount') || '0.000 ر.ق',
       page: friendlyPage,
       device: device,
       browser: browser,

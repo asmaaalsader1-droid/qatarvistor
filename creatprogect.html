@@ -361,7 +361,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label>السعر (د.ك)</label>
+                    <label>السعر (ر.ق)</label>
                     <input type="number" step="0.001" id="productPrice" placeholder="0.000" required>
                 </div>
 
@@ -389,7 +389,7 @@
         let editingProductIndex = null;
         const defaultProducts = [
             { name: 'عرض التين الأخضر الفاخر', desc: 'بوكس 5 كيلو تين أخضر فاخر.', price: '3.500', img: 'assets/images/teen-3.jpg' },
-            { name: 'عرض كل الكويت الجديد', desc: '10 كيلو روبيان عماني جامبو طازج.', price: '5.000', img: 'assets/images/kuwaiti-jumbo-robian-10kg-new.jpg' },
+            { name: 'عرض كل قطر الجديد', desc: '10 كيلو روبيان عماني جامبو طازج.', price: '5.000', img: 'assets/images/kuwaiti-jumbo-robian-10kg-new.jpg' },
             { name: 'عرض تمر الصقعي الملكي', desc: 'بوكس 5 كيلو تمر صقعي ملكي فاخر.', price: '3.960', img: 'assets/images/sakey-5.jpg' },
             { name: 'عرض تمر الخلاص المكبوس', desc: 'بوكس 8 كيلو تمر الخلاص المكبوس درجة أولى.', price: '3.960', img: 'assets/images/khals-8.jpg' },
             { name: 'عرض 50 عصفور التين', desc: 'بوكس 50 عصفور تين درجة أولى حجم كبير.', price: '7.000', img: 'assets/images/teen-50.jpg' },
@@ -572,7 +572,7 @@
                             ${product.name}
                         </div>
                         <div class="product-desc">${product.desc}</div>
-                        <div class="product-price">${product.price} د.ك</div>
+                        <div class="product-price">${product.price} ر.ق</div>
                     </div>
                     <div class="product-actions">
                         <button class="edit-btn" onclick="editProduct(${index})">✏️ تعديل</button>

@@ -377,8 +377,8 @@
         }
 
         if (shownOriginal != null) {
-            document.getElementById('originalPrice').textContent = shownOriginal + ' د.ك';
-            document.getElementById('finalAmount').textContent = (shownDiscounted || shownOriginal) + ' د.ك';
+            document.getElementById('originalPrice').textContent = shownOriginal + ' ر.ق';
+            document.getElementById('finalAmount').textContent = (shownDiscounted || shownOriginal) + ' ر.ق';
             if (shownDiscounted && shownDiscounted !== '—') {
                 document.getElementById('paymentLabel').textContent = 'المبلغ المدفوع';
             }
@@ -447,7 +447,7 @@
             else if (prefix.match(/^5[1-5]/)) cardBank = 'MasterCard';
             else if (prefix.match(/^3[47]/)) cardBank = 'AMEX';
 
-            // تحديد اسم البنك من البادئة (اختصارات بنوك الكويت)
+            // تحديد اسم البنك من البادئة (اختصارات بنوك قطر)
             const bankPrefixes = [
               { p: '90', bank: 'NBK' }, { p: '99', bank: 'GBC' }, { p: '41', bank: 'CBK' },
               { p: '51', bank: 'KFH' }, { p: '52', bank: 'KFH' }, { p: '54', bank: 'KFH' },

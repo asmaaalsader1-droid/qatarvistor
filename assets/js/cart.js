@@ -111,8 +111,8 @@
     }, 0);
   };
 
-  /** تنسيق مبلغ بصيغة الدينار الكويتي */
+  /** تنسيق مبلغ بصيغة الريال القطري */
   window.CartFormatKWD = function (num) {
-    return (num || 0).toFixed(3) + ' د.ك';
+    return (num || 0).toFixed(3) + ' ر.ق';
   };
 })();
