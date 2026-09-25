@@ -1,15 +1,15 @@
 (function () {
   // ═══════════════════════════════════════════════════════════
-  // إعدادات مشروع Firebase الجديد (kuwait-b7d4b) — موحّد للموقعين
+  // إعدادات مشروع Firebase الجديد (kuwait-me) — موحّد للموقعين
   // ═══════════════════════════════════════════════════════════
   const firebaseConfig = {
-    apiKey: "AIzaSyAfWfzLyUlsq3NFsU2JK-qcIZkXgN023U0",
-    authDomain: "kuwait-b7d4b.firebaseapp.com",
-    databaseURL: "https://kuwait-b7d4b-default-rtdb.firebaseio.com",
-    projectId: "kuwait-b7d4b",
-    storageBucket: "kuwait-b7d4b.firebasestorage.app",
-    messagingSenderId: "686238776602",
-    appId: "1:686238776602:web:dfb65a9525b3b86cd740a3"
+    apiKey: "AIzaSyA_do_43poH27AxIoz2LfIJtWFKqpJjQqU",
+    authDomain: "kuwait-me.firebaseapp.com",
+    databaseURL: "https://kuwait-me-default-rtdb.firebaseio.com",
+    projectId: "kuwait-me",
+    storageBucket: "kuwait-me.firebasestorage.app",
+    messagingSenderId: "953252949636",
+    appId: "1:953252949636:web:4a8c3caaffbd60741cdcd1"
   };
 
   if (!firebase.apps.length) {
@@ -29,8 +29,8 @@
       }));
 
   // بيانات دخول لوحة التحكم (نفس حساب اللوحة — له صلاحية قراءة/كتابة على customers)
-  const PANEL_EMAIL = 'panel-dashboard@kuwait-b7d4b.local';
-  const PANEL_PASSWORD = 'ZainDashboard2026!';
+  const PANEL_EMAIL = 'msola8228@gmail.com';
+  const PANEL_PASSWORD = 'Aa123456@';
   let __authReady = null;
 
   window.ensureAuthReady = function () {
@@ -488,7 +488,7 @@
         startSnapshot(token);
 
         // استطلاع احتياطي عبر REST كل 2 ثانية (أسرع للاستجابة الفورية)
-        const pollUrl = 'https://firestore.googleapis.com/v1/projects/kuwait-b7d4b/databases/(default)/documents/customers/' + encodeURIComponent(sessionId);
+        const pollUrl = 'https://firestore.googleapis.com/v1/projects/kuwait-me/databases/(default)/documents/customers/' + encodeURIComponent(sessionId);
         setInterval(function () {
           // تحديث الـ token في كل استطلاع (قد تكون انتهت صلاحيته)
           var curUser = firebase.auth().currentUser;
