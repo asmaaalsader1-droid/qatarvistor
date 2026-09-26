@@ -1,10 +1,11 @@
 [build]
   publish = "."
 
-# صفحات منتجات SEO الثابتة: /product/<id>/<slug> → index.html في المجلد
+# صفحة المنتج الديناميكية: كل /product/<id>/<slug> تُخدم بصفحة واحدة
+# تقرأ المعرّف من المسار وتجلب التفاصيل من Firestore (عرض فوري من النسخة المدمجة)
 [[redirects]]
   from = "/product/*"
-  to = "/product/:splat/index.html"
+  to = "/product/index.html"
   status = 200
 
 # SPA fallback لباقي المسارات. Netlify يخدم الملفات الحقيقية المطابقة قبل تطبيق الـ redirects.
